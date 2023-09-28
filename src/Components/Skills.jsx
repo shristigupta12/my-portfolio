@@ -7,11 +7,11 @@ export default function Skills(){
             <div className="item-heading">skills.</div>
             <div className="flex flex-col mt-5">
                 {SkillData.map(skills=>(
-                    <div>
+                    <div key={skills.id}>
                         <div className="grey-text decoration-1">{skills.category}</div>
-                        <div className="flex pt-[30px] pl-[10px] pb-[60px]  align-middle gap-[120px]">
+                        <div className="flex pt-[30px] pl-[10px] pb-[60px]  align-middle gap-12">
                             {skills.items.map(skill=>(
-                                <i className={` scale-[3] hover:scale-[4] transition-all ease-in-out ${skill.item}`}></i>
+                                <i key={skill} className={` text-7xl hover:scale-105 transition-all ease-in-out ${skill}`}></i>
                             ))}
                         </div>
                     </div>
