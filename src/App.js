@@ -4,7 +4,7 @@ import Skills from "./Components/Skills";
 
 function App() {
   return (
-    <div>
+    <div className="bg-slate-100">
       <Navbar/>
       <Home />
       <Skills/>
